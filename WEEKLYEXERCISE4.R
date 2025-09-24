@@ -27,7 +27,7 @@ gold_data <- olympics %>%
   summarise(total_gold = sum(gold, na.rm = TRUE)) %>%
   ungroup()
 
-# plot the 
+# plot the gold medals overtime.
 ggplot(gold_data, aes(x = year, y = total_gold, color = country)) +
   geom_line(size = 1) +
   geom_point(size = 2) +
