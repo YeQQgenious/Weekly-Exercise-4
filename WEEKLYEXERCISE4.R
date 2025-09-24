@@ -24,4 +24,6 @@ head(medals_by_year)
 ggplot(medals_by_year, aes(x = year, y = total_medals)) +
   geom_line(color = "black", size = 1) +
   geom_point(size = 2) +
-  labs
+  labs(title = "Total Medals by Year",
+       x = "Year", 
+       y = "Total Medals")
